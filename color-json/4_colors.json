@@ -1,0 +1,17 @@
+{
+    "file_name": "4_screenshot.jpeg",
+    "img_colors": [
+        {
+            "colorCode": "(1, 1, 1)",
+            "percent": 77
+        },
+        {
+            "colorCode": "(255, 255, 255)",
+            "percent": 22
+        },
+        {
+            "colorCode": "(123, 123, 123)",
+            "percent": 2
+        }
+    ]
+}

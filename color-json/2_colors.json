@@ -1,0 +1,41 @@
+{
+    "file_name": "2_screenshot.jpeg",
+    "img_colors": [
+        {
+            "colorCode": "(0, 21, 52)",
+            "percent": 75
+        },
+        {
+            "colorCode": "(96, 113, 133)",
+            "percent": 11
+        },
+        {
+            "colorCode": "(255, 217, 0)",
+            "percent": 6
+        },
+        {
+            "colorCode": "(245, 255, 255)",
+            "percent": 2
+        },
+        {
+            "colorCode": "(54, 60, 16)",
+            "percent": 2
+        },
+        {
+            "colorCode": "(138, 109, 0)",
+            "percent": 1
+        },
+        {
+            "colorCode": "(141, 68, 53)",
+            "percent": 1
+        },
+        {
+            "colorCode": "(255, 212, 155)",
+            "percent": 1
+        },
+        {
+            "colorCode": "(43, 6, 0)",
+            "percent": 1
+        }
+    ]
+}
