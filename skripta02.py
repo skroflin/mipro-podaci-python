@@ -48,7 +48,7 @@ def process_images():
             if 'details' in screenshot and 'data' in screenshot['details']:
                 image_data = screenshot['details']['data']
 
-                image_filename = os.path.join(image_directory, json_file.replace('.json', '_screenshot.jpeg'))
+                image_filename = os.path.join(image_directory, json_file.replace('.json', '_screenshot.png'))
                 save_image(image_data, image_filename)
                 print(f"Slika za datoteku '{json_file}' je spremljena kao '{image_filename}'")
 
