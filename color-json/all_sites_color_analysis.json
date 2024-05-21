@@ -1,0 +1,148 @@
+[
+    {
+        "site_id": 7,
+        "file_name": "7_screenshot.png",
+        "img_colors": [
+            {
+                "colorCode": "255,255,255",
+                "colorName": "white",
+                "percent": 92
+            },
+            {
+                "colorCode": "63,148,143",
+                "colorName": "cadetblue",
+                "percent": 5
+            },
+            {
+                "colorCode": "198,142,107",
+                "colorName": "rosybrown",
+                "percent": 2
+            },
+            {
+                "colorCode": "88,88,88",
+                "colorName": "dimgray",
+                "percent": 1
+            }
+        ]
+    },
+    {
+        "site_id": 1,
+        "file_name": "1_screenshot.png",
+        "img_colors": [
+            {
+                "colorCode": "255,255,255",
+                "colorName": "white",
+                "percent": 99
+            },
+            {
+                "colorCode": "140,140,140",
+                "colorName": "gray",
+                "percent": 1
+            }
+        ]
+    },
+    {
+        "site_id": 11,
+        "file_name": "11_screenshot.png",
+        "img_colors": [
+            {
+                "colorCode": "255,255,255",
+                "colorName": "white",
+                "percent": 100
+            }
+        ]
+    },
+    {
+        "site_id": 2,
+        "file_name": "2_screenshot.png",
+        "img_colors": [
+            {
+                "colorCode": "0,21,52",
+                "colorName": "black",
+                "percent": 75
+            },
+            {
+                "colorCode": "96,113,133",
+                "colorName": "slategray",
+                "percent": 11
+            },
+            {
+                "colorCode": "255,219,0",
+                "colorName": "gold",
+                "percent": 6
+            },
+            {
+                "colorCode": "245,255,255",
+                "colorName": "mintcream",
+                "percent": 2
+            },
+            {
+                "colorCode": "53,59,21",
+                "colorName": "darkslategray",
+                "percent": 2
+            },
+            {
+                "colorCode": "135,106,0",
+                "colorName": "olive",
+                "percent": 1
+            },
+            {
+                "colorCode": "137,62,43",
+                "colorName": "saddlebrown",
+                "percent": 1
+            },
+            {
+                "colorCode": "164,177,107",
+                "colorName": "darkkhaki",
+                "percent": 1
+            },
+            {
+                "colorCode": "43,6,0",
+                "colorName": "black",
+                "percent": 1
+            }
+        ]
+    },
+    {
+        "site_id": 4,
+        "file_name": "4_screenshot.png",
+        "img_colors": [
+            {
+                "colorCode": "1,1,1",
+                "colorName": "black",
+                "percent": 77
+            },
+            {
+                "colorCode": "255,255,255",
+                "colorName": "white",
+                "percent": 22
+            },
+            {
+                "colorCode": "123,123,123",
+                "colorName": "gray",
+                "percent": 2
+            }
+        ]
+    },
+    {
+        "site_id": 5,
+        "file_name": "5_screenshot.png",
+        "img_colors": [
+            {
+                "colorCode": "255,255,255",
+                "colorName": "white",
+                "percent": 87
+            },
+            {
+                "colorCode": "0,0,0",
+                "colorName": "black",
+                "percent": 10
+            },
+            {
+                "colorCode": "143,143,143",
+                "colorName": "gray",
+                "percent": 1
+            }
+        ]
+    }
+]
