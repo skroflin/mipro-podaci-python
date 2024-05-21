@@ -35,10 +35,10 @@ def closest_color(requested_color):
 def create_image_entry(colors, file_name, site_id):
     total_pixels = colors[1]
     image_colors = []
+    print(colors)
     for color, count in colors[0]:
         percent = round(count / total_pixels * 100)
         if percent >= 1:
-            color_name = closest_color(color)
             rgb_color = ','.join(map(str, color))
             color_name = closest_color(color)
             image_colors.append({
