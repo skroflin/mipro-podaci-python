@@ -43,4 +43,4 @@ for json_file in json_files:
     output_file = os.path.join(output_directory, "{}_processed.json".format(os.path.splitext(json_file)[0]))
     with open(output_file, 'w') as f:
         json.dump(processed_data, f, indent=4, encoding='utf-8')
-    print("Podaci iz {} spremljeni u {}".format(json_file, output_file))
+    print("Podaci iz {} spremljeni u {}".format(json_file, output_file)) 
