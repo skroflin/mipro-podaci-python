@@ -19,5 +19,9 @@ datoteku ili ne.
 ### Dodatna funkcionalnost
 
 Skripta nakon pohranjivanja snimke zaslona (u `.png` formatu), pohranjuje sve podatke o bojama (rgb vrijednost)
-u zajedničku json datoteku (unutar `colors-json` direktorija u `all_sites_color_analysis.json`), gdje se mogu vidjeti
+u zajedničku json datoteku (unutar `/colors-json` poddirektorija u `all_sites_color_analysis.json`), gdje se mogu vidjeti
 podaci o identifikatoru, nazivu datoteke i njezinim svojstvama boje.
+
+### Nova skripta (`skripta03.py`)
+
+Nova skripta `skripta03.py` analizira sve `.json` datoteke i izvlači podatke HTTPS, Viewport, FCP, LCP, Speed Index, TBT, CLS, TTI, FMP, Max Potential FID, Server Response Time, Javascript Execution Time, Critical Request Chains, Number of Network Requests, Console Errors, Responsive Images, Correct Aspect Ratio, Preload Key Requests, Preconnect Suggestions. Navedene podatke sprema unutar poddirektorija `/analyzed-json`.

@@ -1,46 +1,53 @@
 import os
 import json
 
-current_directory = os.getcwd()
-output_directory = os.path.join(current_directory, 'web-data-json')
+output_dir = "analyzed-json"
+if not os.path.exists(output_dir):
+    os.makedirs(output_dir)
 
-if not os.path.exists(output_directory):
-    os.makedirs(output_directory)
+def safe_get(audit_data, key):
+    if "scoreDisplayMode" in audit_data and audit_data["scoreDisplayMode"] == "error":
+        return "Error: " + str(audit_data.get('errorMessage', 'Unknown'))
+    return audit_data.get(key, "Not available")
 
-json_files = [file for file in os.listdir(current_directory) if file.endswith('.json')]
+def use_json(enter_file):
+    try:
+        with open(enter_file, 'r') as f:
+            data = json.load(f)
+        
+        audits = data.get("audits", {})
+        
+        obrada = {
+            "HTTPS": safe_get(audits.get("is-on-https", {}), "score"),
+            "Viewport": safe_get(audits.get("viewport", {}), "score"),
+            "FCP (First Contentful Paint)": safe_get(audits.get("first-contentful-paint", {}), "displayValue"),
+            "LCP (Largest Contentful Paint)": safe_get(audits.get("largest-contentful-paint", {}), "displayValue"),
+            "Speed Index": safe_get(audits.get("speed-index", {}), "displayValue"),
+            "Total Blocking Time (TBT)": safe_get(audits.get("total-blocking-time", {}), "displayValue"),
+            "CLS (Cumulative Layout Shift)": safe_get(audits.get("cumulative-layout-shift", {}), "displayValue"),
+            "TTI (Time to Interactive)": safe_get(audits.get("interactive", {}), "displayValue"),
+            "FMP (First Meaningful Paint)": safe_get(audits.get("first-meaningful-paint", {}), "displayValue"),
+            "Max Potential FID": safe_get(audits.get("max-potential-fid", {}), "displayValue"),
+            "Server Response Time": safe_get(audits.get("server-response-time", {}), "displayValue"),
+            "JavaScript Execution Time": safe_get(audits.get("bootup-time", {}), "displayValue"),
+            "Critical Request Chains": safe_get(audits.get("critical-request-chains", {}), "details"),
+            "Number of Network Requests": safe_get(audits.get("network-requests", {}), "details"),
+            "Console Errors": safe_get(audits.get("errors-in-console", {}), "details"),
+            "Responsive Images": safe_get(audits.get("image-size-responsive", {}), "score"),
+            "Correct Aspect Ratio": safe_get(audits.get("image-aspect-ratio", {}), "score"),
+            "Preload Key Requests": safe_get(audits.get("uses-rel-preload", {}), "details"),
+            "Preconnect Suggestions": safe_get(audits.get("uses-rel-preconnect", {}), "details"),
+        }
+        
+        exit_file = os.path.join(output_dir, os.path.basename(enter_file))
+        
+        with open(exit_file, 'w') as f:
+            json.dump(obrada, f, indent=4)
+        
+        print("File " + enter_file + " successfully analyzed.")
+    except Exception as e:
+        print("Error while analyzing file: " + enter_file + ": " + str(e))
 
-def process_json_file(json_file):
-    result = {}
-
-    with open(json_file, 'r') as f:
-        data = json.load(f)
-
-    audits = data.get('audits', {})
-
-    result['first-contentful-paint'] = audits.get('first-contentful-paint', {}).get('numericValue', None)
-    result['largest-contentful-paint'] = audits.get('largest-contentful-paint', {}).get('numericValue', None)
-
-    result['is-on-https'] = audits.get('is-on-https', {}).get('score', None)
-
-    result['has-viewport'] = audits.get('viewport', {}).get('score', None)
-
-    thumbnails = []
-    if 'screenshot-thumbnails' in audits:
-        items = audits['screenshot-thumbnails'].get('details', {}).get('items', [])
-        for item in items:
-            thumbnails.append({
-                'timestamp': item.get('timestamp'),
-                'data': item.get('data'),
-            })
-    result['screenshot-thumbnails'] = thumbnails
-
-    return result
-
-for json_file in json_files:
-    file_path = os.path.join(current_directory, json_file)
-    processed_data = process_json_file(file_path)
-
-    output_file = os.path.join(output_directory, "{}_processed.json".format(os.path.splitext(json_file)[0]))
-    with open(output_file, 'w') as f:
-        json.dump(processed_data, f, indent=4, encoding='utf-8')
-    print("Podaci iz {} spremljeni u {}".format(json_file, output_file)) 
+for datoteka in os.listdir("."):
+    if datoteka.endswith(".json"):
+        use_json(datoteka)

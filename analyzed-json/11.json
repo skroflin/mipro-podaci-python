@@ -1,0 +1,134 @@
+{
+    "LCP (Largest Contentful Paint)": "2.6\u00a0s", 
+    "Total Blocking Time (TBT)": "12,750\u00a0ms", 
+    "FCP (First Contentful Paint)": "1.2\u00a0s", 
+    "Correct Aspect Ratio": 1, 
+    "Speed Index": "12.2\u00a0s", 
+    "Max Potential FID": "4,050\u00a0ms", 
+    "JavaScript Execution Time": "4.5\u00a0s", 
+    "Preload Key Requests": {
+        "overallSavingsMs": 0, 
+        "items": [], 
+        "type": "opportunity", 
+        "headings": []
+    }, 
+    "Preconnect Suggestions": {
+        "overallSavingsMs": 0, 
+        "items": [], 
+        "sortedBy": [
+            "wastedMs"
+        ], 
+        "type": "opportunity", 
+        "headings": []
+    }, 
+    "Critical Request Chains": {
+        "chains": {
+            "B1DE9C4E75762FD8D9AFD153D30C44AF": {
+                "request": {
+                    "url": "https:///", 
+                    "transferSize": 521, 
+                    "endTime": 116391.012743, 
+                    "startTime": 116389.584284, 
+                    "responseReceivedTime": 116391.00308299999
+                }
+            }
+        }, 
+        "type": "criticalrequestchain", 
+        "longestChain": {
+            "duration": 1428.459000006318, 
+            "length": 1, 
+            "transferSize": 521
+        }
+    }, 
+    "Console Errors": {
+        "items": [], 
+        "type": "table", 
+        "headings": []
+    }, 
+    "HTTPS": 1, 
+    "TTI (Time to Interactive)": "15.0\u00a0s", 
+    "Number of Network Requests": {
+        "items": [
+            {
+                "networkEndTime": 1458.5890000015497, 
+                "mimeType": "text/html", 
+                "networkRequestTime": 30.12999999523163, 
+                "url": "https:///", 
+                "experimentalFromMainFrame": true, 
+                "entity": "031.com.hr", 
+                "priority": "VeryHigh", 
+                "resourceType": "Document", 
+                "finished": true, 
+                "resourceSize": 623, 
+                "rendererStartTime": 0, 
+                "protocol": "h2", 
+                "transferSize": 521, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }
+        ], 
+        "debugData": {
+            "networkStartTimeTs": 116389554154, 
+            "type": "debugdata"
+        }, 
+        "type": "table", 
+        "headings": [
+            {
+                "valueType": "url", 
+                "key": "url", 
+                "label": "URL"
+            }, 
+            {
+                "valueType": "text", 
+                "key": "protocol", 
+                "label": "Protocol"
+            }, 
+            {
+                "valueType": "ms", 
+                "label": "Network Request Time", 
+                "key": "networkRequestTime", 
+                "granularity": 1
+            }, 
+            {
+                "valueType": "ms", 
+                "label": "Network End Time", 
+                "key": "networkEndTime", 
+                "granularity": 1
+            }, 
+            {
+                "valueType": "bytes", 
+                "displayUnit": "kb", 
+                "label": "Transfer Size", 
+                "key": "transferSize", 
+                "granularity": 1
+            }, 
+            {
+                "valueType": "bytes", 
+                "displayUnit": "kb", 
+                "label": "Resource Size", 
+                "key": "resourceSize", 
+                "granularity": 1
+            }, 
+            {
+                "valueType": "text", 
+                "key": "statusCode", 
+                "label": "Status Code"
+            }, 
+            {
+                "valueType": "text", 
+                "key": "mimeType", 
+                "label": "MIME Type"
+            }, 
+            {
+                "valueType": "text", 
+                "key": "resourceType", 
+                "label": "Resource Type"
+            }
+        ]
+    }, 
+    "Server Response Time": "Root document took 30\u00a0ms", 
+    "FMP (First Meaningful Paint)": "2.6\u00a0s", 
+    "CLS (Cumulative Layout Shift)": "0", 
+    "Viewport": 0, 
+    "Responsive Images": 1
+}

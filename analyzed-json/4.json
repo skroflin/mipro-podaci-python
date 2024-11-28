@@ -1,0 +1,151 @@
+{
+    "LCP (Largest Contentful Paint)": "1.5\u00a0s", 
+    "Total Blocking Time (TBT)": "5,420\u00a0ms", 
+    "FCP (First Contentful Paint)": "1.1\u00a0s", 
+    "Correct Aspect Ratio": 1, 
+    "Speed Index": "5.0\u00a0s", 
+    "Max Potential FID": "2,280\u00a0ms", 
+    "JavaScript Execution Time": "4.0\u00a0s", 
+    "Preload Key Requests": {
+        "overallSavingsMs": 0, 
+        "items": [], 
+        "type": "opportunity", 
+        "headings": []
+    }, 
+    "Preconnect Suggestions": {
+        "overallSavingsMs": 0, 
+        "items": [], 
+        "sortedBy": [
+            "wastedMs"
+        ], 
+        "type": "opportunity", 
+        "headings": []
+    }, 
+    "Critical Request Chains": {
+        "chains": {
+            "83870FBDA5FE6DD31CE453130A26E49D": {
+                "request": {
+                    "url": "https:///", 
+                    "transferSize": 423, 
+                    "endTime": 138100.744739, 
+                    "startTime": 138099.306784, 
+                    "responseReceivedTime": 138100.73232299997
+                }
+            }
+        }, 
+        "type": "criticalrequestchain", 
+        "longestChain": {
+            "duration": 1437.955000013113, 
+            "length": 1, 
+            "transferSize": 423
+        }
+    }, 
+    "Console Errors": {
+        "items": [], 
+        "type": "table", 
+        "headings": []
+    }, 
+    "HTTPS": 1, 
+    "TTI (Time to Interactive)": "7.3\u00a0s", 
+    "Number of Network Requests": {
+        "items": [
+            {
+                "networkEndTime": 1454.9409999847412, 
+                "mimeType": "text/html", 
+                "networkRequestTime": 16.98599997162819, 
+                "url": "https:///", 
+                "experimentalFromMainFrame": true, 
+                "entity": "007.hr", 
+                "priority": "VeryHigh", 
+                "resourceType": "Document", 
+                "finished": true, 
+                "resourceSize": 326, 
+                "rendererStartTime": 0, 
+                "protocol": "h2", 
+                "transferSize": 423, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 1670.6459999978542, 
+                "mimeType": "image/jpeg", 
+                "networkRequestTime": 1589.0719999670982, 
+                "url": "https:///007-security-site-best-picture.jpg", 
+                "experimentalFromMainFrame": true, 
+                "entity": "007.hr", 
+                "priority": "Medium", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 68140, 
+                "rendererStartTime": 1560.6069999933243, 
+                "protocol": "h2", 
+                "transferSize": 68280, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }
+        ], 
+        "debugData": {
+            "networkStartTimeTs": 138099289798, 
+            "type": "debugdata"
+        }, 
+        "type": "table", 
+        "headings": [
+            {
+                "valueType": "url", 
+                "key": "url", 
+                "label": "URL"
+            }, 
+            {
+                "valueType": "text", 
+                "key": "protocol", 
+                "label": "Protocol"
+            }, 
+            {
+                "valueType": "ms", 
+                "label": "Network Request Time", 
+                "key": "networkRequestTime", 
+                "granularity": 1
+            }, 
+            {
+                "valueType": "ms", 
+                "label": "Network End Time", 
+                "key": "networkEndTime", 
+                "granularity": 1
+            }, 
+            {
+                "valueType": "bytes", 
+                "displayUnit": "kb", 
+                "label": "Transfer Size", 
+                "key": "transferSize", 
+                "granularity": 1
+            }, 
+            {
+                "valueType": "bytes", 
+                "displayUnit": "kb", 
+                "label": "Resource Size", 
+                "key": "resourceSize", 
+                "granularity": 1
+            }, 
+            {
+                "valueType": "text", 
+                "key": "statusCode", 
+                "label": "Status Code"
+            }, 
+            {
+                "valueType": "text", 
+                "key": "mimeType", 
+                "label": "MIME Type"
+            }, 
+            {
+                "valueType": "text", 
+                "key": "resourceType", 
+                "label": "Resource Type"
+            }
+        ]
+    }, 
+    "Server Response Time": "Root document took 20\u00a0ms", 
+    "FMP (First Meaningful Paint)": "1.4\u00a0s", 
+    "CLS (Cumulative Layout Shift)": "0", 
+    "Viewport": 1, 
+    "Responsive Images": 1
+}

@@ -1,0 +1,604 @@
+{
+    "LCP (Largest Contentful Paint)": "Error: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)", 
+    "Total Blocking Time (TBT)": "Error: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)", 
+    "FCP (First Contentful Paint)": "Error: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)", 
+    "Correct Aspect Ratio": 1, 
+    "Speed Index": "Error: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)", 
+    "Max Potential FID": "Error: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)", 
+    "JavaScript Execution Time": "5.7\u00a0s", 
+    "Preload Key Requests": {
+        "overallSavingsMs": 0, 
+        "items": [], 
+        "type": "opportunity", 
+        "headings": []
+    }, 
+    "Preconnect Suggestions": "Error: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)", 
+    "Critical Request Chains": {
+        "chains": {
+            "FC63F0FECB8020D227D9BE072F301A7B": {
+                "request": {
+                    "url": "http:///", 
+                    "transferSize": 1229, 
+                    "endTime": 116390.812545, 
+                    "startTime": 116388.659401, 
+                    "responseReceivedTime": 116390.500284
+                }, 
+                "children": {
+                    "97174.2": {
+                        "request": {
+                            "url": "http://www.do-hero.com/yeezy.js", 
+                            "transferSize": 549, 
+                            "endTime": 116391.620241, 
+                            "startTime": 116391.130366, 
+                            "responseReceivedTime": 116391.616192
+                        }
+                    }
+                }
+            }
+        }, 
+        "type": "criticalrequestchain", 
+        "longestChain": {
+            "duration": 2960.8400000035763, 
+            "length": 2, 
+            "transferSize": 549
+        }
+    }, 
+    "Console Errors": {
+        "items": [
+            {
+                "source": "network", 
+                "sourceLocation": {
+                    "url": "https://www.audemarspiguet.com/images/watch_images/standup/small/26325TS_OO_D005CR_01.png", 
+                    "column": 0, 
+                    "line": 0, 
+                    "urlProvider": "network", 
+                    "type": "source-location"
+                }, 
+                "description": "Failed to load resource: the server responded with a status of 404 ()"
+            }, 
+            {
+                "source": "network", 
+                "sourceLocation": {
+                    "url": "https://www.audemarspiguet.com/images/watch_images/standup/small/26325TS_OO_D005CR_01.png", 
+                    "column": 0, 
+                    "line": 0, 
+                    "urlProvider": "network", 
+                    "type": "source-location"
+                }, 
+                "description": "Failed to load resource: the server responded with a status of 404 ()"
+            }
+        ], 
+        "type": "table", 
+        "headings": [
+            {
+                "valueType": "source-location", 
+                "key": "sourceLocation", 
+                "label": "Source"
+            }, 
+            {
+                "valueType": "code", 
+                "key": "description", 
+                "label": "Description"
+            }
+        ]
+    }, 
+    "HTTPS": 0, 
+    "TTI (Time to Interactive)": "Error: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)", 
+    "Number of Network Requests": {
+        "items": [
+            {
+                "networkEndTime": 2185.406999990344, 
+                "mimeType": "text/html", 
+                "networkRequestTime": 32.26299999654293, 
+                "url": "http:///", 
+                "experimentalFromMainFrame": true, 
+                "entity": "007miletic.hr", 
+                "priority": "VeryHigh", 
+                "resourceType": "Document", 
+                "finished": true, 
+                "resourceSize": 986, 
+                "rendererStartTime": 0, 
+                "protocol": "http/1.1", 
+                "transferSize": 1229, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 2993.103000000119, 
+                "mimeType": "application/javascript", 
+                "networkRequestTime": 2503.228000000119, 
+                "url": "http://www.do-hero.com/yeezy.js", 
+                "experimentalFromMainFrame": true, 
+                "entity": "do-hero.com", 
+                "priority": "High", 
+                "resourceType": "Script", 
+                "finished": true, 
+                "resourceSize": 191, 
+                "rendererStartTime": 2443.673000007868, 
+                "protocol": "http/1.1", 
+                "transferSize": 549, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 3604.782000005245, 
+                "mimeType": "", 
+                "networkRequestTime": 2951.7290000021458, 
+                "url": "http://www.audemarspiguet.com/images/watch_images/standup/small/26325TS_OO_D005CR_01.png", 
+                "experimentalFromMainFrame": true, 
+                "entity": "audemarspiguet.com", 
+                "priority": "Low", 
+                "finished": true, 
+                "resourceSize": 0, 
+                "rendererStartTime": 2887.2999999970198, 
+                "protocol": "http/1.1", 
+                "transferSize": 376, 
+                "sessionTargetType": "page", 
+                "statusCode": 301
+            }, 
+            {
+                "networkEndTime": 4327.965000003576, 
+                "mimeType": "text/html", 
+                "networkRequestTime": 3607.5890000015497, 
+                "url": "https://www.audemarspiguet.com/images/watch_images/standup/small/26325TS_OO_D005CR_01.png", 
+                "experimentalFromMainFrame": true, 
+                "entity": "audemarspiguet.com", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 0, 
+                "rendererStartTime": 3604.782000005245, 
+                "protocol": "h2", 
+                "transferSize": 0, 
+                "sessionTargetType": "page", 
+                "statusCode": 404
+            }, 
+            {
+                "networkEndTime": 4956.371000006795, 
+                "mimeType": "text/html", 
+                "networkRequestTime": 4855.802000001073, 
+                "url": "http:///nav.htm", 
+                "entity": "007miletic.hr", 
+                "priority": "VeryHigh", 
+                "resourceType": "Document", 
+                "finished": true, 
+                "resourceSize": 4509, 
+                "rendererStartTime": 4850.721000015736, 
+                "protocol": "http/1.1", 
+                "transferSize": 4757, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 5146.726999998093, 
+                "mimeType": "text/html", 
+                "networkRequestTime": 5080.087999999523, 
+                "url": "http:///main.htm", 
+                "entity": "007miletic.hr", 
+                "priority": "VeryHigh", 
+                "resourceType": "Document", 
+                "finished": true, 
+                "resourceSize": 4789, 
+                "rendererStartTime": 5077.788000002503, 
+                "protocol": "http/1.1", 
+                "transferSize": 5036, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 5394.393000006676, 
+                "mimeType": "text/css", 
+                "networkRequestTime": 5346.912000000477, 
+                "url": "http:///files/nav.css", 
+                "entity": "007miletic.hr", 
+                "priority": "VeryHigh", 
+                "resourceType": "Stylesheet", 
+                "finished": true, 
+                "resourceSize": 717, 
+                "rendererStartTime": 5287.72800001502, 
+                "protocol": "http/1.1", 
+                "transferSize": 962, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 5475.879999995232, 
+                "mimeType": "image/jpeg", 
+                "networkRequestTime": 5428.626000002027, 
+                "url": "http:///images/logo.jpg", 
+                "entity": "007miletic.hr", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 2267, 
+                "rendererStartTime": 5421.9430000036955, 
+                "protocol": "http/1.1", 
+                "transferSize": 2515, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 5801.738000005484, 
+                "mimeType": "image/gif", 
+                "networkRequestTime": 5758.748000010848, 
+                "url": "http:///images/onama.gif", 
+                "entity": "007miletic.hr", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 450, 
+                "rendererStartTime": 5428.449000000954, 
+                "protocol": "http/1.1", 
+                "transferSize": 696, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 5859.640000015497, 
+                "mimeType": "image/gif", 
+                "networkRequestTime": 5809.980000004172, 
+                "url": "http:///images/tjelesna_zastita.gif", 
+                "entity": "007miletic.hr", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 671, 
+                "rendererStartTime": 5429.641000002623, 
+                "protocol": "http/1.1", 
+                "transferSize": 917, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 5978.530000001192, 
+                "mimeType": "image/gif", 
+                "networkRequestTime": 5818.855999991298, 
+                "url": "http:///images/tehnicka_zastita.gif", 
+                "entity": "007miletic.hr", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 810, 
+                "rendererStartTime": 5433.350000008941, 
+                "protocol": "http/1.1", 
+                "transferSize": 1056, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 5980.269000008702, 
+                "mimeType": "image/gif", 
+                "networkRequestTime": 5859.194000005722, 
+                "url": "http:///images/karijera.gif", 
+                "entity": "007miletic.hr", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 262, 
+                "rendererStartTime": 5435.945999994874, 
+                "protocol": "http/1.1", 
+                "transferSize": 508, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 5926.505999997258, 
+                "mimeType": "image/gif", 
+                "networkRequestTime": 5859.478000000119, 
+                "url": "http:///images/contact.gif", 
+                "entity": "007miletic.hr", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 264, 
+                "rendererStartTime": 5436.04999999702, 
+                "protocol": "http/1.1", 
+                "transferSize": 510, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 5925.761999994516, 
+                "mimeType": "text/css", 
+                "networkRequestTime": 5815.542999997735, 
+                "url": "http:///files/main.css", 
+                "entity": "007miletic.hr", 
+                "priority": "VeryHigh", 
+                "resourceType": "Stylesheet", 
+                "finished": true, 
+                "resourceSize": 792, 
+                "rendererStartTime": 5815.175999999046, 
+                "protocol": "http/1.1", 
+                "transferSize": 1037, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 6060.907000005245, 
+                "mimeType": "image/gif", 
+                "networkRequestTime": 5816.711000010371, 
+                "url": "http:///images/title.gif", 
+                "entity": "007miletic.hr", 
+                "priority": "Medium", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 8090, 
+                "rendererStartTime": 5815.360000014305, 
+                "protocol": "http/1.1", 
+                "transferSize": 8337, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 5977.280000001192, 
+                "mimeType": "image/jpeg", 
+                "networkRequestTime": 5817.363000005484, 
+                "url": "http:///images/index1.jpg", 
+                "entity": "007miletic.hr", 
+                "priority": "Medium", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 2623, 
+                "rendererStartTime": 5816.667999997735, 
+                "protocol": "http/1.1", 
+                "transferSize": 2871, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 6150.884000003338, 
+                "mimeType": "image/jpeg", 
+                "networkRequestTime": 6097.70000000298, 
+                "url": "http:///images/index2.jpg", 
+                "entity": "007miletic.hr", 
+                "priority": "Medium", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 6800, 
+                "rendererStartTime": 5816.962999999523, 
+                "protocol": "http/1.1", 
+                "transferSize": 7048, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 6516.751000002027, 
+                "mimeType": "", 
+                "networkRequestTime": 6176.042999997735, 
+                "url": "http://www.audemarspiguet.com/images/watch_images/standup/small/26325TS_OO_D005CR_01.png", 
+                "entity": "audemarspiguet.com", 
+                "priority": "Low", 
+                "finished": true, 
+                "resourceSize": 0, 
+                "rendererStartTime": 5817.434000000358, 
+                "protocol": "http/1.1", 
+                "transferSize": 0, 
+                "sessionTargetType": "page", 
+                "statusCode": 307
+            }, 
+            {
+                "networkEndTime": 6663.395000010729, 
+                "mimeType": "text/html", 
+                "networkRequestTime": 6517.123999997973, 
+                "url": "https://www.audemarspiguet.com/images/watch_images/standup/small/26325TS_OO_D005CR_01.png", 
+                "entity": "audemarspiguet.com", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 0, 
+                "rendererStartTime": 6516.751000002027, 
+                "protocol": "h2", 
+                "transferSize": 0, 
+                "sessionTargetType": "page", 
+                "statusCode": 404
+            }, 
+            {
+                "networkEndTime": 9938.791000008583, 
+                "mimeType": "image/jpeg", 
+                "networkRequestTime": 9755.864999994636, 
+                "url": "http:///images/tjezas1.jpg", 
+                "entity": "007miletic.hr", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 11353, 
+                "rendererStartTime": 9746.851999998093, 
+                "protocol": "http/1.1", 
+                "transferSize": 11602, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 9943.635000005364, 
+                "mimeType": "image/jpeg", 
+                "networkRequestTime": 9756.868000000715, 
+                "url": "http:///images/tehzas1.jpg", 
+                "entity": "007miletic.hr", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 7900, 
+                "rendererStartTime": 9747.211999997497, 
+                "protocol": "http/1.1", 
+                "transferSize": 8148, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 9935.982000008225, 
+                "mimeType": "image/jpeg", 
+                "networkRequestTime": 9757.28900000453, 
+                "url": "http:///images/about1.jpg", 
+                "entity": "007miletic.hr", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 6802, 
+                "rendererStartTime": 9747.333000004292, 
+                "protocol": "http/1.1", 
+                "transferSize": 7050, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 9987.85000000894, 
+                "mimeType": "image/jpeg", 
+                "networkRequestTime": 9757.592999994755, 
+                "url": "http:///images/contact1.jpg", 
+                "entity": "007miletic.hr", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 12823, 
+                "rendererStartTime": 9747.425999999046, 
+                "protocol": "http/1.1", 
+                "transferSize": 13072, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 9845.935000002384, 
+                "mimeType": "image/gif", 
+                "networkRequestTime": 9758.15799999237, 
+                "url": "http:///images/_karijera.gif", 
+                "entity": "007miletic.hr", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 1767, 
+                "rendererStartTime": 9750.343999996781, 
+                "protocol": "http/1.1", 
+                "transferSize": 2014, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 9942.06100000441, 
+                "mimeType": "image/gif", 
+                "networkRequestTime": 9758.562000006437, 
+                "url": "http:///images/_onama.gif", 
+                "entity": "007miletic.hr", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 1818, 
+                "rendererStartTime": 9750.472000002861, 
+                "protocol": "http/1.1", 
+                "transferSize": 2065, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 10002.917999997735, 
+                "mimeType": "image/gif", 
+                "networkRequestTime": 9758.730000004172, 
+                "url": "http:///images/_tehnicka_zastita.gif", 
+                "entity": "007miletic.hr", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 2698, 
+                "rendererStartTime": 9750.56399999559, 
+                "protocol": "http/1.1", 
+                "transferSize": 2945, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 10011.148000001907, 
+                "mimeType": "image/gif", 
+                "networkRequestTime": 9759.010000005364, 
+                "url": "http:///images/_tjelesna_zastita.gif", 
+                "entity": "007miletic.hr", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 2632, 
+                "rendererStartTime": 9750.643999993801, 
+                "protocol": "http/1.1", 
+                "transferSize": 2879, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }, 
+            {
+                "networkEndTime": 10015.347000002861, 
+                "mimeType": "image/gif", 
+                "networkRequestTime": 9762.75600001216, 
+                "url": "http:///images/_contact.gif", 
+                "entity": "007miletic.hr", 
+                "priority": "Low", 
+                "resourceType": "Image", 
+                "finished": true, 
+                "resourceSize": 1944, 
+                "rendererStartTime": 9750.725999996066, 
+                "protocol": "http/1.1", 
+                "transferSize": 2191, 
+                "sessionTargetType": "page", 
+                "statusCode": 200
+            }
+        ], 
+        "debugData": {
+            "networkStartTimeTs": 116388627138, 
+            "type": "debugdata"
+        }, 
+        "type": "table", 
+        "headings": [
+            {
+                "valueType": "url", 
+                "key": "url", 
+                "label": "URL"
+            }, 
+            {
+                "valueType": "text", 
+                "key": "protocol", 
+                "label": "Protocol"
+            }, 
+            {
+                "valueType": "ms", 
+                "label": "Network Request Time", 
+                "key": "networkRequestTime", 
+                "granularity": 1
+            }, 
+            {
+                "valueType": "ms", 
+                "label": "Network End Time", 
+                "key": "networkEndTime", 
+                "granularity": 1
+            }, 
+            {
+                "valueType": "bytes", 
+                "displayUnit": "kb", 
+                "label": "Transfer Size", 
+                "key": "transferSize", 
+                "granularity": 1
+            }, 
+            {
+                "valueType": "bytes", 
+                "displayUnit": "kb", 
+                "label": "Resource Size", 
+                "key": "resourceSize", 
+                "granularity": 1
+            }, 
+            {
+                "valueType": "text", 
+                "key": "statusCode", 
+                "label": "Status Code"
+            }, 
+            {
+                "valueType": "text", 
+                "key": "mimeType", 
+                "label": "MIME Type"
+            }, 
+            {
+                "valueType": "text", 
+                "key": "resourceType", 
+                "label": "Resource Type"
+            }
+        ]
+    }, 
+    "Server Response Time": "Root document took 920\u00a0ms", 
+    "FMP (First Meaningful Paint)": "Error: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)", 
+    "CLS (Cumulative Layout Shift)": "0", 
+    "Viewport": 0, 
+    "Responsive Images": 1
+}
