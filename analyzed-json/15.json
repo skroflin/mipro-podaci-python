@@ -1,11 +1,23 @@
 {
-    "LCP (Largest Contentful Paint)": "8.8\u00a0s", 
-    "Total Blocking Time (TBT)": "35,040\u00a0ms", 
-    "FCP (First Contentful Paint)": "7.5\u00a0s", 
+    "LCP (Largest Contentful Paint)": "8.8 s", 
+    "Total Blocking Time (TBT)": "35,040 ms", 
+    "FCP (First Contentful Paint)": "7.5 s", 
+    "HTTPS Protocols": [
+        "h2", 
+        "h2", 
+        "h2", 
+        "h2", 
+        "h2", 
+        "h2", 
+        "h2", 
+        "h2", 
+        "h2", 
+        "h2"
+    ], 
+    "Speed Index": "25.2 s", 
     "Correct Aspect Ratio": 1, 
-    "Speed Index": "25.2\u00a0s", 
-    "Max Potential FID": "8,870\u00a0ms", 
-    "JavaScript Execution Time": "23.0\u00a0s", 
+    "Max Potential FID": "8,870 ms", 
+    "JavaScript Execution Time": "23.0 s", 
     "Preload Key Requests": {
         "overallSavingsMs": 0, 
         "items": [], 
@@ -99,247 +111,12 @@
             "transferSize": 14774
         }
     }, 
-    "Console Errors": {
-        "items": [], 
-        "type": "table", 
-        "headings": []
-    }, 
+    "Console Errors": [], 
     "HTTPS": 1, 
-    "TTI (Time to Interactive)": "44.1\u00a0s", 
-    "Number of Network Requests": {
-        "items": [
-            {
-                "networkEndTime": 1621.2689999938011, 
-                "mimeType": "text/html", 
-                "networkRequestTime": 63.89200000464916, 
-                "url": "https:///", 
-                "experimentalFromMainFrame": true, 
-                "entity": "", 
-                "priority": "VeryHigh", 
-                "resourceType": "Document", 
-                "finished": true, 
-                "resourceSize": 2386, 
-                "rendererStartTime": 0, 
-                "protocol": "h2", 
-                "transferSize": 1435, 
-                "sessionTargetType": "page", 
-                "statusCode": 200
-            }, 
-            {
-                "networkEndTime": 2605.951999992132, 
-                "mimeType": "text/css", 
-                "networkRequestTime": 2578.4189999848604, 
-                "url": "https:///css/normalize.css", 
-                "experimentalFromMainFrame": true, 
-                "entity": "", 
-                "priority": "VeryHigh", 
-                "resourceType": "Stylesheet", 
-                "finished": true, 
-                "resourceSize": 6138, 
-                "rendererStartTime": 2267.4939999878407, 
-                "protocol": "h2", 
-                "transferSize": 2049, 
-                "sessionTargetType": "page", 
-                "statusCode": 200
-            }, 
-            {
-                "networkEndTime": 2691.165999993682, 
-                "mimeType": "text/css", 
-                "networkRequestTime": 2647.3779999911785, 
-                "url": "https:///css/main.css", 
-                "experimentalFromMainFrame": true, 
-                "entity": "", 
-                "priority": "VeryHigh", 
-                "resourceType": "Stylesheet", 
-                "finished": true, 
-                "resourceSize": 1153, 
-                "rendererStartTime": 2580.7189999967813, 
-                "protocol": "h2", 
-                "transferSize": 820, 
-                "sessionTargetType": "page", 
-                "statusCode": 200
-            }, 
-            {
-                "networkEndTime": 3181.2529999911785, 
-                "mimeType": "text/css", 
-                "networkRequestTime": 2671.8700000047684, 
-                "url": "https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&display=swap", 
-                "experimentalFromMainFrame": true, 
-                "entity": "Google Fonts", 
-                "priority": "VeryHigh", 
-                "resourceType": "Stylesheet", 
-                "finished": true, 
-                "resourceSize": 2372, 
-                "rendererStartTime": 2659.1349999904633, 
-                "protocol": "h2", 
-                "transferSize": 923, 
-                "sessionTargetType": "page", 
-                "statusCode": 200
-            }, 
-            {
-                "networkEndTime": 3216.7360000014305, 
-                "mimeType": "image/jpeg", 
-                "networkRequestTime": 2855.47199998796, 
-                "url": "https:///img/Under_construction_2560.jpg", 
-                "experimentalFromMainFrame": true, 
-                "entity": "", 
-                "priority": "Medium", 
-                "resourceType": "Image", 
-                "finished": true, 
-                "resourceSize": 43272, 
-                "rendererStartTime": 2717.63299998641, 
-                "protocol": "h2", 
-                "transferSize": 43620, 
-                "sessionTargetType": "page", 
-                "statusCode": 200
-            }, 
-            {
-                "networkEndTime": 3219.6669999957085, 
-                "mimeType": "image/png", 
-                "networkRequestTime": 2865.795000001788, 
-                "url": "https:///img/Logo.png", 
-                "experimentalFromMainFrame": true, 
-                "entity": "", 
-                "priority": "Medium", 
-                "resourceType": "Image", 
-                "finished": true, 
-                "resourceSize": 2840, 
-                "rendererStartTime": 2842.3369999825954, 
-                "protocol": "h2", 
-                "transferSize": 3141, 
-                "sessionTargetType": "page", 
-                "statusCode": 200
-            }, 
-            {
-                "networkEndTime": 3664.7959999889135, 
-                "mimeType": "text/javascript", 
-                "networkRequestTime": 3640.3239999860525, 
-                "url": "https:///js/interpolateCSS.min.js", 
-                "experimentalFromMainFrame": true, 
-                "entity": "", 
-                "priority": "Medium", 
-                "resourceType": "Script", 
-                "finished": true, 
-                "resourceSize": 2673, 
-                "rendererStartTime": 2843.2869999855757, 
-                "protocol": "h2", 
-                "transferSize": 1436, 
-                "sessionTargetType": "page", 
-                "statusCode": 200
-            }, 
-            {
-                "networkEndTime": 3681.234999984503, 
-                "mimeType": "text/javascript", 
-                "networkRequestTime": 3665.9619999974966, 
-                "url": "https:///js/main.js", 
-                "experimentalFromMainFrame": true, 
-                "entity": "", 
-                "priority": "Medium", 
-                "resourceType": "Script", 
-                "finished": true, 
-                "resourceSize": 948, 
-                "rendererStartTime": 2843.5029999911785, 
-                "protocol": "h2", 
-                "transferSize": 604, 
-                "sessionTargetType": "page", 
-                "statusCode": 200
-            }, 
-            {
-                "networkEndTime": 7431.7379999905825, 
-                "mimeType": "font/woff2", 
-                "networkRequestTime": 7338.999999985099, 
-                "url": "https://fonts.gstatic.com/s/barlow/v12/7cHpv4kjgoGqM7E_DMs5ynghnQ.woff2", 
-                "experimentalFromMainFrame": true, 
-                "entity": "Google Fonts", 
-                "priority": "VeryHigh", 
-                "resourceType": "Font", 
-                "finished": true, 
-                "resourceSize": 14736, 
-                "rendererStartTime": 6371.824999988079, 
-                "protocol": "h2", 
-                "transferSize": 15269, 
-                "sessionTargetType": "page", 
-                "statusCode": 200
-            }, 
-            {
-                "networkEndTime": 7445.386999994516, 
-                "mimeType": "font/woff2", 
-                "networkRequestTime": 7378.081000000238, 
-                "url": "https://fonts.gstatic.com/s/barlow/v12/7cHqv4kjgoGqM7E3_-gs51ostz0rdg.woff2", 
-                "experimentalFromMainFrame": true, 
-                "entity": "Google Fonts", 
-                "priority": "VeryHigh", 
-                "resourceType": "Font", 
-                "finished": true, 
-                "resourceSize": 14656, 
-                "rendererStartTime": 6866.435000002384, 
-                "protocol": "h2", 
-                "transferSize": 14774, 
-                "sessionTargetType": "page", 
-                "statusCode": 200
-            }
-        ], 
-        "debugData": {
-            "networkStartTimeTs": 116388463489, 
-            "type": "debugdata"
-        }, 
-        "type": "table", 
-        "headings": [
-            {
-                "valueType": "url", 
-                "key": "url", 
-                "label": "URL"
-            }, 
-            {
-                "valueType": "text", 
-                "key": "protocol", 
-                "label": "Protocol"
-            }, 
-            {
-                "valueType": "ms", 
-                "label": "Network Request Time", 
-                "key": "networkRequestTime", 
-                "granularity": 1
-            }, 
-            {
-                "valueType": "ms", 
-                "label": "Network End Time", 
-                "key": "networkEndTime", 
-                "granularity": 1
-            }, 
-            {
-                "valueType": "bytes", 
-                "displayUnit": "kb", 
-                "label": "Transfer Size", 
-                "key": "transferSize", 
-                "granularity": 1
-            }, 
-            {
-                "valueType": "bytes", 
-                "displayUnit": "kb", 
-                "label": "Resource Size", 
-                "key": "resourceSize", 
-                "granularity": 1
-            }, 
-            {
-                "valueType": "text", 
-                "key": "statusCode", 
-                "label": "Status Code"
-            }, 
-            {
-                "valueType": "text", 
-                "key": "mimeType", 
-                "label": "MIME Type"
-            }, 
-            {
-                "valueType": "text", 
-                "key": "resourceType", 
-                "label": "Resource Type"
-            }
-        ]
-    }, 
-    "Server Response Time": "Root document took 20\u00a0ms", 
-    "FMP (First Meaningful Paint)": "9.1\u00a0s", 
+    "TTI (Time to Interactive)": "44.1 s", 
+    "Number of Network Requests": 10, 
+    "Server Response Time": 21.537000000000035, 
+    "FMP (First Meaningful Paint)": "9.1 s", 
     "CLS (Cumulative Layout Shift)": "0.077", 
     "Viewport": 1, 
     "Responsive Images": 1

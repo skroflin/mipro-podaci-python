@@ -1,11 +1,14 @@
 {
-    "LCP (Largest Contentful Paint)": "0.9\u00a0s", 
-    "Total Blocking Time (TBT)": "140\u00a0ms", 
-    "FCP (First Contentful Paint)": "0.9\u00a0s", 
+    "LCP (Largest Contentful Paint)": "0.9 s", 
+    "Total Blocking Time (TBT)": "140 ms", 
+    "FCP (First Contentful Paint)": "0.9 s", 
+    "HTTPS Protocols": [
+        "http/1.1"
+    ], 
+    "Speed Index": "1.3 s", 
     "Correct Aspect Ratio": 1, 
-    "Speed Index": "1.3\u00a0s", 
-    "Max Potential FID": "140\u00a0ms", 
-    "JavaScript Execution Time": "0.3\u00a0s", 
+    "Max Potential FID": "140 ms", 
+    "JavaScript Execution Time": "0.3 s", 
     "Preload Key Requests": {
         "overallSavingsMs": 0, 
         "items": [], 
@@ -40,94 +43,12 @@
             "transferSize": 786
         }
     }, 
-    "Console Errors": {
-        "items": [], 
-        "type": "table", 
-        "headings": []
-    }, 
+    "Console Errors": [], 
     "HTTPS": 0, 
-    "TTI (Time to Interactive)": "1.2\u00a0s", 
-    "Number of Network Requests": {
-        "items": [
-            {
-                "networkEndTime": 441.8429999947548, 
-                "mimeType": "text/html", 
-                "networkRequestTime": 14.372999995946884, 
-                "url": "http:///", 
-                "experimentalFromMainFrame": true, 
-                "entity": "0.hr", 
-                "priority": "VeryHigh", 
-                "resourceType": "Document", 
-                "finished": true, 
-                "resourceSize": 1060, 
-                "rendererStartTime": 0, 
-                "protocol": "http/1.1", 
-                "transferSize": 786, 
-                "sessionTargetType": "page", 
-                "statusCode": 200
-            }
-        ], 
-        "debugData": {
-            "networkStartTimeTs": 116040946605, 
-            "type": "debugdata"
-        }, 
-        "type": "table", 
-        "headings": [
-            {
-                "valueType": "url", 
-                "key": "url", 
-                "label": "URL"
-            }, 
-            {
-                "valueType": "text", 
-                "key": "protocol", 
-                "label": "Protocol"
-            }, 
-            {
-                "valueType": "ms", 
-                "label": "Network Request Time", 
-                "key": "networkRequestTime", 
-                "granularity": 1
-            }, 
-            {
-                "valueType": "ms", 
-                "label": "Network End Time", 
-                "key": "networkEndTime", 
-                "granularity": 1
-            }, 
-            {
-                "valueType": "bytes", 
-                "displayUnit": "kb", 
-                "label": "Transfer Size", 
-                "key": "transferSize", 
-                "granularity": 1
-            }, 
-            {
-                "valueType": "bytes", 
-                "displayUnit": "kb", 
-                "label": "Resource Size", 
-                "key": "resourceSize", 
-                "granularity": 1
-            }, 
-            {
-                "valueType": "text", 
-                "key": "statusCode", 
-                "label": "Status Code"
-            }, 
-            {
-                "valueType": "text", 
-                "key": "mimeType", 
-                "label": "MIME Type"
-            }, 
-            {
-                "valueType": "text", 
-                "key": "resourceType", 
-                "label": "Resource Type"
-            }
-        ]
-    }, 
-    "Server Response Time": "Root document took 190\u00a0ms", 
-    "FMP (First Meaningful Paint)": "0.9\u00a0s", 
+    "TTI (Time to Interactive)": "1.2 s", 
+    "Number of Network Requests": 1, 
+    "Server Response Time": 185.36100000000002, 
+    "FMP (First Meaningful Paint)": "0.9 s", 
     "CLS (Cumulative Layout Shift)": "0", 
     "Viewport": 0, 
     "Responsive Images": 1
