@@ -4,7 +4,6 @@ from datetime import datetime
 from collections import Counter
 import pymysql
 
-# Database configuration
 db_config = {
     'host': 'localhost',
     'user': 'root',
@@ -13,7 +12,6 @@ db_config = {
     'port': 3306
 }
 
-# Safe float conversion
 def safe_float(value, default=0.0):
     try:
         value = str(value).replace(" ms", "").replace(" ms", "").replace("s", "").strip()
@@ -21,21 +19,17 @@ def safe_float(value, default=0.0):
     except (ValueError, AttributeError):
         return default
 
-# Check if a table exists in the database
 def check_table_exists(cursor, table_name):
     cursor.execute(f"SHOW TABLES LIKE '{table_name}'")
     result = cursor.fetchone()
     return result is not None
 
-# Connect to database
 db = pymysql.connect(**db_config)
 cursor = db.cursor()
 
-# Function to drop and recreate tables
 def recreate_tables():
     print("Dropping and recreating tables...")
 
-    # Drop dependent tables first (those with foreign keys)
     if check_table_exists(cursor, 'metrics'):
         cursor.execute("DROP TABLE IF EXISTS metrics;")
     if check_table_exists(cursor, 'https_protocols'):
@@ -45,12 +39,10 @@ def recreate_tables():
     if check_table_exists(cursor, 'critical_request_chains'):
         cursor.execute("DROP TABLE IF EXISTS critical_request_chains;")
     
-    # Now drop parent table (websites)
     if check_table_exists(cursor, 'websites'):
         cursor.execute("DROP TABLE IF EXISTS websites;")
     print("Tables dropped successfully.")
 
-    # Recreate websites table (parent table)
     cursor.execute("""
     CREATE TABLE websites (
         website_id INT PRIMARY KEY,
@@ -65,7 +57,6 @@ def recreate_tables():
     """)
     print("\nwebsites table created.")
 
-    # Recreate dependent tables (child tables)
     cursor.execute("""
     CREATE TABLE metrics (
         metric_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -115,7 +106,6 @@ def recreate_tables():
     """)
     print("\ncritical_request_chains table created.")
 
-# Ensure the tables are recreated
 recreate_tables()
 
 def count_chain_depth(chain):
@@ -137,11 +127,9 @@ def calculate_total_transfer_size(chain):
             size += calculate_total_transfer_size(child)
     return size
 
-# Directory and JSON files
 current_directory = os.getcwd()
 json_files = [file for file in os.listdir(current_directory) if file.endswith('.json')]
 
-# Batch insertion for performance
 def batch_insert(table, data, cursor):
     """Inserts data into the given table."""
     if table == 'websites':
@@ -185,7 +173,6 @@ def batch_insert(table, data, cursor):
 
     cursor.executemany(query, data)
 
-# Process each JSON file
 def process_json_file(json_file):
     website_id = int(os.path.splitext(os.path.basename(json_file))[0])
 
@@ -196,7 +183,6 @@ def process_json_file(json_file):
         print(f"Error reading file {json_file}: {str(e)}")
         return
 
-    # Data for `websites`
     website_data = {
         'website_id': website_id,
         'timestamp': datetime.now(),
@@ -209,7 +195,6 @@ def process_json_file(json_file):
     }
     batch_insert('websites', [website_data], cursor)
 
-    # Data for `https_protocols`
     protocol_counts = Counter(data.get("HTTPS Protocols", []))
     protocols_data = [
         {'website_id': website_id, 'protocol_version': protocol, 'count': count}
@@ -218,7 +203,6 @@ def process_json_file(json_file):
     ]
     batch_insert('https_protocols', protocols_data, cursor)
 
-    # Data for `critical_request_chains`
     critical_chains = data.get("Critical Request Chains")
     
     if isinstance(critical_chains, str):
@@ -265,7 +249,6 @@ def process_json_file(json_file):
         print(f"Storing zero metrics for {json_file} - Invalid or missing data")
         batch_insert('critical_request_chains', [chains_data], cursor)
 
-    # Data for `console_errors`
     errors = data.get("Console Errors", [])
     errors_data = [
         {
@@ -278,11 +261,10 @@ def process_json_file(json_file):
     ]
     batch_insert('console_errors', errors_data, cursor)
 
-# Limit file processing for testing
-for json_file in json_files:  # Process only 50 files for testing
+
+for json_file in json_files:
     process_json_file(json_file)
 
-# Commit changes and close connection
 db.commit()
 cursor.close()
 db.close()
