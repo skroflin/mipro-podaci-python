@@ -12,6 +12,12 @@ db_config = {
     'port': 3306
 }
 
+def parse_timestamp(timestamp_str):
+    try:
+        return datetime.strptime(timestamp_str, "%Y-%m-%dT%H:%M:%S.%fZ")
+    except (ValueError, TypeError):
+        return datetime.now()
+
 def safe_float(value, default=0.0):
     try:
         value = str(value).replace(" ms", "").replace(" ms", "").replace("s", "").strip()
@@ -58,17 +64,6 @@ def recreate_tables():
     print("\nwebsites table created.")
 
     cursor.execute("""
-    CREATE TABLE metrics (
-        metric_id INT AUTO_INCREMENT PRIMARY KEY,
-        website_id INT,
-        metric_name VARCHAR(255),
-        metric_value FLOAT,
-        FOREIGN KEY (website_id) REFERENCES websites(website_id)
-    );
-    """)
-    print("\nmetrics table created.")
-
-    cursor.execute("""
     CREATE TABLE https_protocols (
         protocol_id INT AUTO_INCREMENT PRIMARY KEY,
         website_id INT,
@@ -106,6 +101,7 @@ def recreate_tables():
     """)
     print("\ncritical_request_chains table created.")
 
+# Ensure the tables are recreated
 recreate_tables()
 
 def count_chain_depth(chain):
@@ -185,7 +181,7 @@ def process_json_file(json_file):
 
     website_data = {
         'website_id': website_id,
-        'timestamp': datetime.now(),
+        'timestamp': parse_timestamp(data.get("Timestamp")),
         'fcp': safe_float(data.get("FCP (First Contentful Paint)", "0")),
         'lcp': safe_float(data.get("LCP (Largest Contentful Paint)", "0")),
         'speed_index': safe_float(data.get("Speed Index", "0")),
@@ -250,17 +246,17 @@ def process_json_file(json_file):
         batch_insert('critical_request_chains', [chains_data], cursor)
 
     errors = data.get("Console Errors", [])
+    timestamp = parse_timestamp(data.get("Timestamp"))
     errors_data = [
         {
             'website_id': website_id,
             'source': error.get("source", ""),
             'description': error.get("description", ""),
-            'timestamp': datetime.now()
+            'timestamp': timestamp
         }
         for error in errors
     ]
     batch_insert('console_errors', errors_data, cursor)
-
 
 for json_file in json_files:
     process_json_file(json_file)

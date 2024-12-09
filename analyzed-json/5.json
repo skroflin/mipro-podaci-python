@@ -35,6 +35,7 @@
     "Speed Index": "Error: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)", 
     "Correct Aspect Ratio": 1, 
     "Max Potential FID": "Error: The page did not paint any content. Please ensure you keep the browser window in the foreground during the load and try again. (NO_FCP)", 
+    "Timestamp": "2024-01-14T23:36:08.568Z", 
     "JavaScript Execution Time": "5.7 s", 
     "Preload Key Requests": {
         "overallSavingsMs": 0, 

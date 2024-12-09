@@ -6,6 +6,7 @@
     "Speed Index": "Error: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Details: net::ERR_CERT_COMMON_NAME_INVALID)", 
     "Correct Aspect Ratio": "Error: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Details: net::ERR_CERT_COMMON_NAME_INVALID)", 
     "Max Potential FID": "Error: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Details: net::ERR_CERT_COMMON_NAME_INVALID)", 
+    "Timestamp": "2024-01-14T23:36:08.507Z", 
     "JavaScript Execution Time": "Error: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Details: net::ERR_CERT_COMMON_NAME_INVALID)", 
     "Preload Key Requests": "Error: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Details: net::ERR_CERT_COMMON_NAME_INVALID)", 
     "Preconnect Suggestions": "Error: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Details: net::ERR_CERT_COMMON_NAME_INVALID)", 

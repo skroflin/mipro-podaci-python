@@ -6,6 +6,7 @@
     "Speed Index": "Error: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)", 
     "Correct Aspect Ratio": "Error: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)", 
     "Max Potential FID": "Error: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)", 
+    "Timestamp": "2024-01-14T23:36:07.873Z", 
     "JavaScript Execution Time": "Error: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)", 
     "Preload Key Requests": "Error: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)", 
     "Preconnect Suggestions": "Error: Lighthouse was unable to reliably load the page you requested. Make sure you are testing the correct URL and that the server is properly responding to all requests. (Status code: 403)", 

@@ -55,6 +55,7 @@ def use_json(enter_file):
             "Correct Aspect Ratio": safe_get(audits.get("image-aspect-ratio", {}), "score"),
             "Preload Key Requests": safe_get(audits.get("uses-rel-preload", {}), "details"),
             "Preconnect Suggestions": safe_get(audits.get("uses-rel-preconnect", {}), "details"),
+            "Timestamp": data.get("fetchTime")
         }
         
         exit_file = os.path.join(output_dir, os.path.basename(enter_file))
