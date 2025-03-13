@@ -2,13 +2,11 @@ import os
 from PIL import Image
 import shutil
 
-# Definicija direktorija
 current_directory = os.getcwd()
 image_directory = os.path.join(current_directory, 'screenshots')
 light_directory = os.path.join(image_directory, 'light-photos')
 dark_directory = os.path.join(image_directory, 'dark-photos')
 
-# Kreiranje direktorija ako ne postoje
 os.makedirs(light_directory, exist_ok=True)
 os.makedirs(dark_directory, exist_ok=True)
 
@@ -36,5 +34,4 @@ def classify_images(threshold=50):
                 shutil.move(image_path, os.path.join(dark_directory, file))
                 print(f"{file} premješten u dark-photos/ ({white_percentage:.2f}% bijele boje)")
 
-# Pokretanje klasifikacije slika
 classify_images()
